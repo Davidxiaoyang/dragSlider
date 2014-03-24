@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+.slide{
+	width:900px;
+	height:400px;
+	margin: 100px auto;
+	overflow:hidden;
+	position:relative;
+}
+.slide .slide-wrap{
+	width:4500px;
+	height:400px;
+	position:absolute;
+	left:0;
+	top:0;
+	
+}
+.slide .slide-wrap div{
+	float:left;
+}
+.slide .slide-wrap img{
+	width:900px;
+	height:400px;
+}
+ul,ol,li{list-style:none;}
+.slide .slide-icon{
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+.slide .slide-icon li{
+	width:20px;
+	height:20px;
+	margin-left:10px;
+	text-align:center;
+	background:red;
+	float:left;
+}
+.slide .slide-icon a{
+	color:#fff;
+	text-decoration:none;
+}
+.slide .slide-icon .active{
+	background:yellow;
+}
+</style>
+<script type="text/javascript" src="dragslide.js"></script>
+<script>
+window.onload = function(){
+new slide();
+}
+</script>
+</head>
+
+<body>
+	<div class="slide" id="slide">
+		<div class="slide-wrap">
+			<div><img src="2.jpg" /></div>
+			<div><img src="3.jpg" /></div>
+			<div><img src="2.jpg" /></div>
+			<div><img src="9.jpg" /></div>
+			<div><img src="11.jpg" /></div>
+		</div>
+		<ul class="slide-icon">
+			<li class="active"><a href="javascript:;">1</a></li>
+			<li><a href="javascript:;">2</a></li>
+			<li><a href="javascript:;">3</a></li>
+			<li><a href="javascript:;">4</a></li>
+			<li><a href="javascript:;">5</a></li>
+		</ul>
+	</div>
+</body>
+
+</html>
